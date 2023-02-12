@@ -1,0 +1,27 @@
+Eris Binary Padding program enlarge the size of a target file through
+a binary padding technique, where the target file's size was padded with
+a garbage bytes.
+
+USAGE:
+   -sizeGB/MB <size> -<padType> -path <path>
+
+   -path <path>:   A path of a file to be enlarge/padded.
+   -sizeGB <size>: Adjust the size to be padded in gigabytes (GB)
+   -sizeMB <size>: Adjust the size to be padded in megabytes (MB)
+                   
+                   Default padded size was 100 MB
+                   ---------------------------------------
+
+   -<padType>:     Sets the bytes for padding, options are:
+
+                   -n: Null-based padding bytes.
+                   -z: Zero-based padding bytes.
+                   -r: Randomized-based padding bytes.
+
+                   A default padding bytes is '-n'
+                   ---------------------------------------
+
+This program generates a backup of a target file (which ends with a
+'.bak' extension) before padding begins, in order to prevent loss
+if there is something wrong to a padded file. (e.g: corrupted file,
+and not running a padded program.)

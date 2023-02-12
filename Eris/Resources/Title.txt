@@ -1,0 +1,12 @@
+
+ ________________
+ |<<<>>>|      | \
+ |<<<>>>|      |__\  EEEEEE  RRRRRR   IIIIII   SSSSS
+ |<<<>>>|         |  E       R     R    II    S
+ |<<<>>>|         |  EEEEEE  RRRRRR     II     SSSS
+ |<<<>>>|         |  E       R   R      II         S
+ |______|_________|  EEEEEE  R     R  IIIIII  SSSSS
+===========================================================
+	Author: PheeLeep
+	Repository: https://github.com/PheeLeep/Eris
+===========================================================

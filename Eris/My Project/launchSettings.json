@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Eris": {
+      "commandName": "Project"
+    },
+    "Profile 1": {
+      "commandName": "Project",
+      "commandLineArgs": "-path \"Hello World.exe\" -sizeMB 100"
+    }
+  }
+}
