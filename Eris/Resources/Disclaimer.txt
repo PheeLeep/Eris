@@ -1,5 +1,8 @@
                 === DISCLAIMER ===
 
-This program is meant to use for education purposes only. 
-The author takes NO responsibility and liability for any damages
-when you use this program. Use this program AT YOUR OWN RISK.
+This program is use for education purposes only, and it should not 
+be use beyond what is supposed to, without a mutual permission. 
+The author is not responsible or not held liable to any damage or 
+misuse that was made by using this program.
+
+USE AT YOUR OWN RISK.

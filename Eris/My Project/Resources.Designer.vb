@@ -61,8 +61,14 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to This program is meant to use for education purposes only. The author takes NO responsibility and liability for any damages
-        '''when you use this program. Use this AT YOUR OWN RISK..
+        '''  Looks up a localized string similar to                 === DISCLAIMER ===
+        '''
+        '''This program is use for education purposes only, and it should not 
+        '''be use beyond what is supposed to, without a mutual permission. 
+        '''The author is not responsible or not held liable to any damage or 
+        '''misuse that was made by using this program.
+        '''
+        '''USE AT YOUR OWN RISK..
         '''</summary>
         Friend ReadOnly Property Disclaimer() As String
             Get
@@ -71,7 +77,21 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to .
+        '''  Looks up a localized string similar to Eris Binary Padding program enlarge the size of a target file through
+        '''a binary padding technique, where the target file&apos;s size was padded with
+        '''a garbage bytes.
+        '''
+        '''USAGE:
+        '''   dotnet eris.dll -path &lt;path&gt; [options]
+        '''
+        '''Argument:
+        '''   -path &lt;path&gt;: A path of a file to be enlarge/padded.
+        '''
+        '''Options:
+        '''   -sizeGB &lt;size&gt;: Adjust the size of a padded file in gigabytes (GB)
+        '''   -sizeMB &lt;size&gt;: Adjust the size of a padded file in megabytes (MB)
+        '''
+        '''(If the option -sizeMB or -sizeGB was not specified, A default padded  [rest of string was truncated]&quot;;.
         '''</summary>
         Friend ReadOnly Property Help() As String
             Get

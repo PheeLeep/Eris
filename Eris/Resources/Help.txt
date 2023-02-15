@@ -3,23 +3,23 @@ a binary padding technique, where the target file's size was padded with
 a garbage bytes.
 
 USAGE:
-   -sizeGB/MB <size> -<padType> -path <path>
+   dotnet eris.dll -path <path> [options]
 
-   -path <path>:   A path of a file to be enlarge/padded.
-   -sizeGB <size>: Adjust the size to be padded in gigabytes (GB)
-   -sizeMB <size>: Adjust the size to be padded in megabytes (MB)
-                   
-                   Default padded size was 100 MB
-                   ---------------------------------------
+Argument:
+   -path <path>: A path of a file to be enlarge/padded.
 
-   -<padType>:     Sets the bytes for padding, options are:
+Options:
+   -sizeGB <size>: Adjust the size of a padded file in gigabytes (GB)
+   -sizeMB <size>: Adjust the size of a padded file in megabytes (MB)
 
-                   -n: Null-based padding bytes.
-                   -z: Zero-based padding bytes.
-                   -r: Randomized-based padding bytes.
+(If the option -sizeMB or -sizeGB was not specified, A default padded size of 100 MB will be set.)
+--------------------------------------------------------------------------
 
-                   A default padding bytes is '-n'
-                   ---------------------------------------
+   -n: Null-based padding bytes.
+   -z: Zero-based padding bytes.
+   -r: Randomized-based padding bytes.
+
+(A default padding byte character is null-based padding type. ('-n'))
 
 This program generates a backup of a target file (which ends with a
 '.bak' extension) before padding begins, in order to prevent loss

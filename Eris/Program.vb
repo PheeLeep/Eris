@@ -29,6 +29,10 @@ Module Program
         ' Check for drive space
         console.PrintLine("Checking disk space...", PrintType.Verbose)
         Dim drive As New DriveInfo(TargetFile.FullName)
+        If TargetFile.Length = 0 Then
+            console.PrintLine("Target file is zero, nothing to be padded.", PrintType.Warning)
+            Return
+        End If
         Dim fileSize As Long = TargetFile.Length
         Dim totalLen As Long = BytesToPad + fileSize
         Dim totalAvailableSize As Long = drive.AvailableFreeSpace - totalLen
