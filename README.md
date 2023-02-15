@@ -6,7 +6,7 @@ USE AT YOUR OWN RISK.
 </br>
 
 ## Description
-Eris is a .NET-based file padding program used to manipulate file's size by enlarging with random garbage data, or padding, without affecting its functionality.
+Eris is a PoC (Proof of Concept) .NET-based file padding program used to manipulate file's size by enlarging with random garbage data, or padding, without affecting its functionality.
 
 This file padding method is known in [MITRE ATT&CK](https://attack.mitre.org/techniques/T1027/001/), as a part of file obfuscation:
 <blockquote>
