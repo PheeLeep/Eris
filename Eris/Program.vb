@@ -42,6 +42,13 @@ Module Program
             console.PrintLine("Available free space of '" & drive.Name & "' is too low.", PrintType.Error)
             End
         End If
+
+        ' Check if BytesToPad is smaller than the actual file's size. If found, exit a program.
+        If BytesToPad < TargetFile.Length Then
+            console.PrintLine("Padded bytes are too small.", PrintType.Error)
+            End
+        End If
+
         console.PrintLine("Disk space check completed. (" & CalculateBytes(totalAvailableSize) & " remaining after the padding.)", PrintType.Verbose)
 
         If Not CreateBackup() Then End
